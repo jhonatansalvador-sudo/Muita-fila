@@ -1,0 +1,5 @@
+{
+  "name": "Muita fila - monitor de pausas",
+  "description": "Um painel em tempo real para monitorar as escalas de pausa dos operadores de call center. Carregue um arquivo CSV para acompanhar quem está em pausa, quem é o próximo e quem está voltando em breve.",
+  "requestFramePermissions": []
+}
