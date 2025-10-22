@@ -1,4 +1,4 @@
-import { OperatorSchedule, Break, BreakType } from '../types';
+import { OperatorSchedule, Break } from '../types';
 
 const REST_BREAK_DURATION_MINUTES = 10;
 const MEAL_BREAK_DURATION_MINUTES = 20;

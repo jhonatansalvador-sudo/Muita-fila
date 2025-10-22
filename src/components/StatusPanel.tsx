@@ -1,5 +1,5 @@
 import React from 'react';
-import { OperatorStatus, Break } from '../types';
+import { OperatorStatus } from '../types';
 import OperatorCard from './OperatorCard';
 
 interface StatusPanelProps {
