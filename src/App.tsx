@@ -53,16 +53,16 @@ const App: React.FC = () => {
 
 
   return (
-    <div className="min-h-screen bg-slate-100 text-slate-800 font-sans">
-      <header className="bg-brand-primary shadow-md">
+    <div className="min-h-screen text-text-secondary font-sans">
+      <header className="bg-brand-navy shadow-md">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
           <h1 className="text-2xl sm:text-3xl font-bold text-white tracking-tight">
-            Muita fila - monitor de pausas
+            Monitor de pausas - Operadores da Porter B.A
           </h1>
           {schedules.length > 0 && (
             <button
               onClick={handleReset}
-              className="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded-lg transition-colors duration-200"
+              className="bg-brand-lime hover:brightness-95 text-brand-navy font-bold py-2 px-4 rounded-lg transition-colors duration-200"
             >
               Carregar Nova Escala
             </button>
@@ -88,7 +88,7 @@ const App: React.FC = () => {
         )}
       </main>
 
-      <footer className="text-center py-4 text-slate-500 text-sm">
+      <footer className="text-center py-4 text-text-secondary/70 text-sm">
         <p>&copy; {new Date().getFullYear()} Monitor de Pausas. Todos os direitos reservados.</p>
       </footer>
     </div>

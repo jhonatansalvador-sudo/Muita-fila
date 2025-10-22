@@ -36,12 +36,12 @@ const FileUpload: React.FC<FileUploadProps> = ({ onFileUpload }) => {
   return (
     <div className="bg-white p-8 rounded-xl shadow-lg border border-slate-200">
       <div className="text-center mb-8">
-        <h2 className="text-2xl font-bold text-brand-primary mb-2">Carregar Escala de Pausas</h2>
-        <p className="text-slate-600">Por favor, carregue a escala diária em formato CSV para iniciar o monitoramento.</p>
+        <h2 className="text-2xl font-bold text-brand-navy mb-2">Carregar Escala de Pausas</h2>
+        <p className="text-text-secondary">Por favor, carregue a escala diária em formato CSV para iniciar o monitoramento.</p>
       </div>
 
       <div 
-        className={`border-2 ${dragActive ? 'border-brand-secondary' : 'border-dashed border-slate-300'} p-10 rounded-lg text-center transition-colors duration-200`}
+        className={`border-2 ${dragActive ? 'border-brand-lime' : 'border-dashed border-slate-300'} p-10 rounded-lg text-center transition-colors duration-200`}
         onDragEnter={handleDrag}
         onDragOver={handleDrag}
         onDragLeave={handleDrag}
@@ -55,7 +55,7 @@ const FileUpload: React.FC<FileUploadProps> = ({ onFileUpload }) => {
               {dragActive ? "Solte o arquivo aqui" : "Arraste e solte seu arquivo aqui"}
             </p>
             <p className="text-slate-500 text-sm mt-1">ou</p>
-            <span className="mt-2 bg-brand-secondary hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg transition-colors">
+            <span className="mt-2 bg-brand-lime hover:brightness-95 text-brand-navy font-bold py-2 px-4 rounded-lg transition-colors">
               Procurar Arquivo
             </span>
           </div>
@@ -63,8 +63,8 @@ const FileUpload: React.FC<FileUploadProps> = ({ onFileUpload }) => {
       </div>
 
       <div className="mt-8 pt-6 border-t border-slate-200">
-        <h3 className="text-lg font-semibold text-brand-dark mb-3">Instruções e Formato do Arquivo</h3>
-        <p className="text-slate-600 mb-4">
+        <h3 className="text-lg font-semibold text-brand-navy mb-3">Instruções e Formato do Arquivo</h3>
+        <p className="text-text-secondary mb-4">
           O arquivo deve ser um CSV com vírgula (,) como delimitador. O sistema irá extrair automaticamente as colunas necessárias: 
           <code className="bg-slate-200 text-sm font-mono p-1 rounded">NOME</code>, 
           <code className="bg-slate-200 text-sm font-mono p-1 rounded">1º DESCANSO</code>, 

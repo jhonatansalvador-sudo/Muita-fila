@@ -15,11 +15,11 @@ const formatTime = (date: Date) => {
 const getBreakBadgeStyle = (breakType: BreakType): { text: string; className: string } => {
     switch (breakType) {
         case '1º Descanso': 
-            return { text: 'D1', className: 'bg-blue-100 text-blue-800' };
+            return { text: 'D1', className: 'bg-lime-200 text-lime-800' };
         case 'Alimentação': 
-            return { text: 'ALM', className: 'bg-indigo-100 text-indigo-800' };
+            return { text: 'ALM', className: 'bg-sky-200 text-sky-800' };
         case '2º Descanso': 
-            return { text: 'D2', className: 'bg-purple-100 text-purple-800' };
+            return { text: 'D2', className: 'bg-fuchsia-200 text-fuchsia-800' };
         default: 
             return { text: 'Pausa', className: 'bg-slate-100 text-slate-800' };
     }
@@ -36,9 +36,9 @@ const OperatorCard: React.FC<OperatorCardProps> = ({ operator, timeKey, onMarkDa
   const badge = getBreakBadgeStyle(operator.breakItem.type);
 
   return (
-    <div className="bg-slate-50 hover:bg-slate-100 p-3 rounded-lg transition-colors duration-200">
+    <div className="bg-white hover:bg-bg-light p-3 rounded-lg transition-colors duration-200 border border-slate-200">
       <div className="grid grid-cols-12 gap-2 items-center">
-        <div className="col-span-5 font-semibold text-brand-dark truncate" title={operator.operatorName}>
+        <div className="col-span-5 font-semibold text-brand-navy truncate" title={operator.operatorName}>
             {operator.operatorName}
         </div>
         <div className="col-span-3 flex justify-center">
@@ -46,7 +46,7 @@ const OperatorCard: React.FC<OperatorCardProps> = ({ operator, timeKey, onMarkDa
                 {badge.text}
             </span>
         </div>
-        <div className="col-span-3 text-right font-mono font-bold text-brand-secondary">
+        <div className="col-span-3 text-right font-mono font-bold text-brand-navy">
           {formatTime(operator.breakItem[timeKey])}
         </div>
         <div className="col-span-1 flex justify-end">

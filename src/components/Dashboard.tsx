@@ -61,16 +61,16 @@ const Dashboard: React.FC<DashboardProps> = ({ schedules, fileName, onMarkDayOff
 
   return (
     <div className="space-y-8">
-      <div className="p-4 bg-white rounded-lg shadow-md flex flex-col sm:flex-row justify-between items-center border-l-4 border-brand-primary">
+      <div className="p-4 bg-white rounded-lg shadow-md flex flex-col sm:flex-row justify-between items-center border-l-4 border-brand-navy">
         <div>
-          <h2 className="text-xl font-bold text-brand-dark">Painel ao Vivo</h2>
-          <p className="text-sm text-slate-500">
+          <h2 className="text-xl font-bold text-brand-navy">Painel ao Vivo</h2>
+          <p className="text-sm text-text-secondary">
             Exibindo escala de: <span className="font-semibold">{fileName}</span>
           </p>
         </div>
         <div className="mt-4 sm:mt-0 text-center sm:text-right">
-          <p className="text-sm text-slate-500">Horário Atual</p>
-          <p className="text-3xl font-mono font-bold text-brand-primary tracking-wider">{clockDisplay}</p>
+          <p className="text-sm text-text-secondary">Horário Atual</p>
+          <p className="text-3xl font-mono font-bold text-brand-navy tracking-wider">{clockDisplay}</p>
         </div>
       </div>
 
